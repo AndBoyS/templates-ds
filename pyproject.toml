@@ -34,6 +34,8 @@ tqdm = "^4.66.2"
 pre-commit = "^3.7.1"
 types-tqdm = "^4.66.0.20240106"
 torch-tb-profiler = "^0.4.3"
+pandas-stubs = "^2.2.2.240603"
+data-science-types = "^0.2.23"
 
 [build-system]
 requires = ["poetry-core"]
