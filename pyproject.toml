@@ -31,6 +31,7 @@ scikit-learn = "^1.4.2"
 mypy = "^1.9.0"
 ruff = "^0.3.7"
 tqdm = "^4.66.2"
+pre-commit = "^3.7.1"
 types-tqdm = "^4.66.0.20240106"
 torch-tb-profiler = "^0.4.3"
 
