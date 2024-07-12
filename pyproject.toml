@@ -5,6 +5,11 @@ line-length = 120
 strict = true
 disallow_untyped_calls = false
 allow_redefinition = true
+
+[[tool.mypy.overrides]]
+module = [
+    "sklearn.*",
+]
 ignore_missing_imports = true
 
 [tool.pyright]
@@ -29,12 +34,14 @@ torch = "^2.2.2"
 torchvision = "^0.17.2"
 tensorboard = "^2.16.2"
 scikit-learn = "^1.4.2"
+tqdm = "^4.66.2"
+torch-tb-profiler = "^0.4.3"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
 mypy = "^1.9.0"
 ruff = "^0.3.7"
-tqdm = "^4.66.2"
-pre-commit = "^3.7.1"
 types-tqdm = "^4.66.0.20240106"
-torch-tb-profiler = "^0.4.3"
 pandas-stubs = "^2.2.2.240603"
 data-science-types = "^0.2.23"
 
