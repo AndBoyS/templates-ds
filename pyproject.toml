@@ -15,6 +15,7 @@ convention = "pep257"
 strict = true
 disallow_untyped_calls = false
 allow_redefinition = true
+plugins = ["pydantic.mypy", "pandera.mypy"]
 
 [[tool.mypy.overrides]]
 module = [
@@ -46,6 +47,8 @@ tensorboard = "^2.16.2"
 scikit-learn = "^1.4.2"
 tqdm = "^4.66.2"
 torch-tb-profiler = "^0.4.3"
+pydantic = {extras = ["mypy"], version = "^2.8.2"}
+pandera = {extras = ["mypy"], version = "^0.20.3"}
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.9.0"
