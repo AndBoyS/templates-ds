@@ -15,6 +15,36 @@ select = [
     "SIM",
     # isort
     "I",
+    "ASYNC",
+    # comprehensions
+    "C4",
+    # implicit string concat
+    "ISC",
+    # pytest
+    "PT",
+    # return
+    "RET",
+    # pathlib
+    "PTH",
+    # remove commented code
+    "ERA",
+    # pandas
+    "PD",
+    # use specific error code for lint ignores
+    "PGH",
+    # pylint
+    "PL",
+    # numpy
+    "NPY",
+    "PERF",
+    "FURB",
+]
+ignore = [
+    # Line too long
+    "E501",
+    # open should be replaced by Path.open
+    "PTH123",
+    "ISC001",
 ]
 
 [tool.mypy]
